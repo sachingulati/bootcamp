@@ -1,0 +1,34 @@
+<!doctype>
+<html>
+ <head>
+  <title>Exercises</title>
+  <script src="script.js"></script>
+ </head>
+
+ <body>
+   Question 1:<br>
+   <input type="button" onclick="calcInt()" value="Calculate Simple Interest"/>
+   <br><br>Question 2:<br>
+   <input type="button" onclick="checkPal()" value="Check Palindrome"/>
+   <br><br>Question 3:<br>
+   <input type="button" onclick="areaCircle()" value="Area of Circle"/>
+   <br><br>Question 4:
+   <br><input type="button" onclick="getElementById('name').value=prompt('Enter Name')" value="name"/>
+   <input type="text" id="name" onkeyup="getElementById('name2').value=getElementById('name').value""/>
+   <br><br>Question 5:<br>
+   <input type="text" id="txt" onkeyup="getElementById('txt2').value=getElementById('txt').value""/>
+   <input type="text" id="txt2"/>
+   <br><br>Question 6:<br>
+   <form onsubmit="return validateForm()">
+     name: <input type="text" id="formname"/><span id="nameError"></span>
+     <br>age: <input type="text" id="formage"/><span id="ageError"></span>
+     <br><input type="submit" value="submit"/>
+   </form>
+   <br><br>Question 7:<br>
+   <div onmouseover="this.style.backgroundColor='red'" onmouseout="this.style.backgroundColor='white'" onmouseout="">Text inside div</div>
+
+   <div id="clock"></div>
+   <div id="output"></div>
+   <br><br><br><br>
+ <body>
+</html>
