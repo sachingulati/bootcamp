@@ -1,0 +1,1 @@
+"this is a string".findAll('i').size()
