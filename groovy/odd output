@@ -1,0 +1,16 @@
+class Person{
+
+  int age
+
+Person p = new Person(name:"sachin",gender:"Male",address:"my home",age:23)
+
+name:    ${p.name}
+
+gender:  ${p.gender}
+
+"""
+
+name:    ${p.getName()}
+
+gender:  ${p.getGender()}
+

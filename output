@@ -1,0 +1,114 @@
+class Person{
+  String name, gender, address
+  int age
+}
+class Employee extends Person{
+  String empId, company
+  int salary
+  String toString(){
+    return "${name} is a ${gender} aged ${age} who lives at ${address}. He works for ${company} with employee id ${empId} and draws ${salary} lots of money !!!!."
+  }
+}
+Employee p = new Employee(name:"sachin",gender:"Male",address:"my home",age:23,empId:"temp 15-02",company:"TTN Digital", salary:15100)
+println p
+class Person{
+  String name, gender, address
+  int age
+}
+class Employee extends Person{
+  String empId, company
+  int salary
+  void setCompany(String n){
+     company = "modified company " + n
+  }
+}
+Employee p = new Employee(name:"sachin",gender:"Male",address:"my home",age:23,empId:"temp 15-02",company:"TTN Digital", salary:15100)
+println """Via dot operator:
+name:    ${p.name}
+age:     ${p.age}
+gender:  ${p.gender}
+address: ${p.address}
+empId:   ${p.empId}
+company: ${p.company}
+salary:  ${p.salary}
+"""
+println """Via getter:
+name:    ${p.getName()}
+age:     ${p.getAge()}
+gender:  ${p.getGender()}
+address: ${p.getAddress()}
+empId:   ${p.getEmpId()}
+company: ${p.getCompany()}
+salary:  ${p.getSalary()}
+"""
+p.@company = "changed"
+println p.companyList l = [1,4,2,5]
+Closure checknum = {List list, int num->
+list.contains(num)
+}
+checknum(l,5)println "Using for loop"
+for(int i = 1; i<=10;i++)
+  print i*3 + " "
+println "\nUsing Range" 
+(1..10).each {print it*3 + " "}
+
+println "\nUsing List"
+List l = new ArrayList([1,2,3,4,5,6,7,8,9,10])
+l.each{print it*3 + " "}
+println "\n_______________________________"if ("Test")
+  println "true"
+else println "false"
+if ('null')
+  println "true"
+else println "false"
+if (null)
+  println "true"
+else println "false"
+if (100)
+  println "true"
+else println "false"
+if (0)
+  println "true"
+else println "false"
+if ([])
+  println "true"
+else println "false"
+if ([null])
+  println "true"
+else println "false"
+class Person{
+  String name, gender, address
+  int age
+}
+Person p = new Person(name:"sachin",gender:"Male",address:"my home",age:23)
+println """Via dot operator:
+name:    ${p.name}
+age:     ${p.age}
+gender:  ${p.gender}
+address: ${p.address}
+"""
+println """Via getter:
+name:    ${p.getName()}
+age:     ${p.getAge()}
+gender:  ${p.getGender()}
+address: ${p.getAddress()}"""
+(0..3).each{
+  (2**it).times {print "*"} 
+  println ""}
+println "----------"class HourMinute{
+  int hours,minutes
+  HourMinute plus(HourMinute b){
+    HourMinute c = new HourMinute(hours:(hours+b.hours),minutes:(minutes+b.minutes));
+    if(c.minutes >= 60){
+      c.minutes-=60
+      c.hours++
+    }
+    return c
+  }
+  String toString(){
+    hours + ":" + minutes
+  }
+}
+HourMinute a = new HourMinute(hours:10,minutes:40),
+b = new HourMinute(hours:5,minutes:30)
+HourMinute c = a+b

@@ -1,0 +1,1 @@
+classPerson{Stringname,gender,addressintage}Personp=newPerson(name:"sachin",gender:"Male",address:"myhome",age:23)println"""Viadotoperator:name:${p.name}age:${p.age}gender:${p.gender}address:${p.address}"""println"""Viagetter:name:${p.getName()}age:${p.getAge()}gender:${p.getGender()}address:${p.getAddress()}"""
