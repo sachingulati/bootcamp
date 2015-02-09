@@ -1,0 +1,47 @@
+LINUX exercise..
+
+q1- add your custom alias
+alias print='cat'
+
+q2- create a soft link to a dir 
+ln -s jquery j
+
+q3- export env_vars MY_HOME and set it to /home/<userName>
+export MY_HOME=/home/prashant
+
+q4- Add a folder ~/myScripts to PATH
+export PATH=$PATH:~/myScripts
+
+q5- install cheese from apt-get
+sudo apt-get install cheese
+
+q6- find the occurances of "intelligrape" in the file a.txt
+grep -cw intelligrape a.txt
+
+q7- find number of files with the text "intelligrape" in folder "a1
+grep -l "intelligrape" /a/*.txt |wc -l
+
+q8- find number of lines in a file
+wc -l a.txt
+
+q9- How to find file changed after a certain date
+find . -mtime +1
+
+q10- copy file from server - intelligrape@downloads.intelligrape.com - igdefault : The complete /home/intelligrape/downloads.intelligrape.com/
+books folder
+scp meenakshi@10.1.0.103:/home/intelligrape/a.txt b.txt
+
+q11- create a file using any command line editor(vim/pico) : c.txt, with the following text: "This is a sample file, welcome to intelligrape" and save the file and quit
+vi c.txt(to save and exit :wq)
+
+q12- copy file to server
+scp new.txt meenakshi@10.1.0.103:/home/intelligrape/new.txt
+
+q13- rename dir b1 to YOUR_NAME_B
+mv b1 sachin
+
+q14- copy file from a.txt to /tmp/b.txt
+cp a.txt /tmp/b.txt
+
+q15- Try getting dump of selected table instead of the whole database:
+
